@@ -1,0 +1,185 @@
+/* Estilos de tu tienda en línea */
+/* Agrega tus estilos personalizados aquí */
+
+* {}
+
+.sidebar img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+.sidebar h1 {
+    text-align: center;
+}
+
+.eco {
+    margin-top: 15px;
+}
+
+.eco h3 {
+    display: inline;
+}
+
+.eco img {
+    display: inline-flex;
+    width: 30px;
+    height: auto;
+    margin-bottom: 4px;
+}
+
+.sidebar h3 {
+    padding-top: 15px;
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+    float: left;
+    padding-left: 10px;
+}
+
+.logo h2 {
+    display: inline-block;
+    position: absolute;
+    text-justify: auto;
+    padding-left: 6px;
+    padding-top: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #333;
+}
+
+nav ul li:hover>ul {
+    display: block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Estilos para el carrusel */
+.carousel-container {
+    overflow: hidden;
+    width: 300px;
+    /* Ancho del carrusel */
+    margin: 0 auto;
+    /* Centrar el carrusel en la página */
+}
+
+.carousel {
+    display: flex;
+    width: 1000px;
+    /* Ancho total de todas las imágenes */
+    animation: desplazar 10s infinite linear;
+    /* Animación para el desplazamiento */
+}
+
+.carousel-slide {
+    flex: 0 0 300px;
+    /* Ancho de cada imagen en el carrusel */
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+}
+
+@keyframes desplazar {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-1000px);
+        /* Ancho total de todas las imágenes */
+    }
+}
+
+/* Estilo para el aside */
+aside {
+    width: 20%;
+    /* Define el ancho del aside */
+    float: left;
+    /* Hace que el aside se sitúe a la izquierda */
+    background-color: #f0f0f0;
+    /* Color de fondo del aside */
+    padding: 20px;
+    /* Espacio interno en el aside */
+}
+
+/* Estilo para el contenido principal */
+main {
+    width: 80%;
+    /* Define el ancho del contenido principal */
+    float: left;
+    /* Hace que el contenido principal se sitúe a la derecha */
+    padding: 20px;
+    /* Espacio interno en el contenido principal */
+}
+
+/* Limpiar el float para evitar problemas de diseño */
+.clear {
+    clear: both;
+}
+
+footer {
+    text-align: center;
+}
+
+.pr {
+    width: 100px;
+    height: 100px;
+}
+
+ul.productos {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    /* Utilizamos display: flex para disposición horizontal */
+}
+
+li.producto {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.papaya {
+    display: block;
+    height: 150px;
+    width: auto;
+}
